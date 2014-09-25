@@ -1,0 +1,12 @@
+Source: thequux-apt-config
+Section: base
+Priority: optional
+Maintainer: TQ Hirsch <thequux@thequux.com>
+Build-Depends: debhelper (>= 7), gnupg
+
+Package: thequux-apt-config
+Section: base
+Priority: optional
+Architecture: all
+Multi-Arch: foreign
+Description: TheQuux's repo signing key and an apt.conf
