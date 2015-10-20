@@ -8,12 +8,12 @@ build/$(KEYRING_NAME): $(KEYS)
 	[ -d build ] || mkdir -p build
 	[ -f $@ ] && rm -f $@ || true
 	touch $@
-	gpg --keyring $@ --import $^
+	gpg --no-default-keyring --keyring $@ --import $^
 
 install: build
 	install -d $(DESTDIR)/etc/apt/trusted.gpg.d
 	install -d $(DESTDIR)/etc/apt/sources.list.d
-	install -o root -g root -m 0755 \
+	install -o root -g root -m 0644 \
 	    build/$(KEYRING_NAME) $(DESTDIR)/etc/apt/trusted.gpg.d/
-	install -o root -g root -m 0755 \
+	install -o root -g root -m 0644 \
 	    00-apt.thequux.com.list $(DESTDIR)/etc/apt/sources.list.d/

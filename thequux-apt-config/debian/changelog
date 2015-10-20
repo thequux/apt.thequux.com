@@ -1,3 +1,21 @@
+thequux-apt-config (2015.10.20) UNRELEASED; urgency=medium
+
+  * Update the key to fix the expiration date
+
+ -- TQ Hirsch <thequux@peewee.upstandinghackers.com>  Tue, 20 Oct 2015 16:18:25 +0200
+
+thequux-apt-config (2015.07.27+1) unstable; urgency=medium
+
+  * And we actually install the key now
+
+ -- TQ Hirsch <thequux@peewee.upstandinghackers.com>  Mon, 27 Jul 2015 15:15:38 +0200
+
+thequux-apt-config (2015.07.27) unstable; urgency=medium
+
+  * Config files are no longer executable
+
+ -- TQ Hirsch <thequux@thequux.com>  Mon, 27 Jul 2015 15:07:58 +0200
+
 thequux-apt-config (2014.9.25) unstable; urgency=low
 
   * Initial release.
